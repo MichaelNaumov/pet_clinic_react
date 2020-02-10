@@ -67,7 +67,7 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    fetch('./data.json')
+    fetch('/data.json')
       .then(response => response.json())
       .then(result => {
         const apts = result.map(item => {
